@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF8E17F31EB9BF8F00B2FC9E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E17E71EB9BF7F00B2FC9E /* Alamofire.framework */; };
-		CF8E17F41EB9BF8F00B2FC9E /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E17E81EB9BF7F00B2FC9E /* ObjectMapper.framework */; };
-		CF8E17F51EB9BF8F00B2FC9E /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E17E91EB9BF7F00B2FC9E /* RxBlocking.framework */; };
-		CF8E17F61EB9BF8F00B2FC9E /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E17EA1EB9BF7F00B2FC9E /* RxCocoa.framework */; };
-		CF8E17F71EB9BF8F00B2FC9E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E17EB1EB9BF7F00B2FC9E /* RxSwift.framework */; };
-		CF8E17F81EB9BF8F00B2FC9E /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E17EC1EB9BF7F00B2FC9E /* RxTest.framework */; };
+		CF8E18181EB9C55900B2FC9E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E18121EB9C55900B2FC9E /* Alamofire.framework */; };
+		CF8E18191EB9C55900B2FC9E /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E18131EB9C55900B2FC9E /* ObjectMapper.framework */; };
+		CF8E181A1EB9C55900B2FC9E /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E18141EB9C55900B2FC9E /* RxBlocking.framework */; };
+		CF8E181B1EB9C55900B2FC9E /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E18151EB9C55900B2FC9E /* RxCocoa.framework */; };
+		CF8E181C1EB9C55900B2FC9E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E18161EB9C55900B2FC9E /* RxSwift.framework */; };
+		CF8E181D1EB9C55900B2FC9E /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E18171EB9C55900B2FC9E /* RxTest.framework */; };
 		CFE0918A1EB3723A00E9FDAD /* RxAlamofireMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE091801EB3723A00E9FDAD /* RxAlamofireMapper.framework */; };
 		CFE0918F1EB3723A00E9FDAD /* RxAlamofireMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE0918E1EB3723A00E9FDAD /* RxAlamofireMapperTests.swift */; };
 		CFE091911EB3723A00E9FDAD /* RxAlamofireMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE091831EB3723A00E9FDAD /* RxAlamofireMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,12 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CF8E17E71EB9BF7F00B2FC9E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
-		CF8E17E81EB9BF7F00B2FC9E /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = SOURCE_ROOT; };
-		CF8E17E91EB9BF7F00B2FC9E /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = SOURCE_ROOT; };
-		CF8E17EA1EB9BF7F00B2FC9E /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
-		CF8E17EB1EB9BF7F00B2FC9E /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
-		CF8E17EC1EB9BF7F00B2FC9E /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = SOURCE_ROOT; };
+		CF8E18121EB9C55900B2FC9E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		CF8E18131EB9C55900B2FC9E /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = SOURCE_ROOT; };
+		CF8E18141EB9C55900B2FC9E /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = SOURCE_ROOT; };
+		CF8E18151EB9C55900B2FC9E /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
+		CF8E18161EB9C55900B2FC9E /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
+		CF8E18171EB9C55900B2FC9E /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = SOURCE_ROOT; };
 		CFE091801EB3723A00E9FDAD /* RxAlamofireMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxAlamofireMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE091831EB3723A00E9FDAD /* RxAlamofireMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAlamofireMapper.h; sourceTree = "<group>"; };
 		CFE091841EB3723A00E9FDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,12 +50,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF8E17F31EB9BF8F00B2FC9E /* Alamofire.framework in Frameworks */,
-				CF8E17F41EB9BF8F00B2FC9E /* ObjectMapper.framework in Frameworks */,
-				CF8E17F51EB9BF8F00B2FC9E /* RxBlocking.framework in Frameworks */,
-				CF8E17F61EB9BF8F00B2FC9E /* RxCocoa.framework in Frameworks */,
-				CF8E17F71EB9BF8F00B2FC9E /* RxSwift.framework in Frameworks */,
-				CF8E17F81EB9BF8F00B2FC9E /* RxTest.framework in Frameworks */,
+				CF8E181C1EB9C55900B2FC9E /* RxSwift.framework in Frameworks */,
+				CF8E181B1EB9C55900B2FC9E /* RxCocoa.framework in Frameworks */,
+				CF8E181D1EB9C55900B2FC9E /* RxTest.framework in Frameworks */,
+				CF8E18191EB9C55900B2FC9E /* ObjectMapper.framework in Frameworks */,
+				CF8E18181EB9C55900B2FC9E /* Alamofire.framework in Frameworks */,
+				CF8E181A1EB9C55900B2FC9E /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,12 +73,12 @@
 		CF8E17E61EB9BF6700B2FC9E /* Third Party Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				CF8E17E71EB9BF7F00B2FC9E /* Alamofire.framework */,
-				CF8E17E81EB9BF7F00B2FC9E /* ObjectMapper.framework */,
-				CF8E17E91EB9BF7F00B2FC9E /* RxBlocking.framework */,
-				CF8E17EA1EB9BF7F00B2FC9E /* RxCocoa.framework */,
-				CF8E17EB1EB9BF7F00B2FC9E /* RxSwift.framework */,
-				CF8E17EC1EB9BF7F00B2FC9E /* RxTest.framework */,
+				CF8E18121EB9C55900B2FC9E /* Alamofire.framework */,
+				CF8E18131EB9C55900B2FC9E /* ObjectMapper.framework */,
+				CF8E18141EB9C55900B2FC9E /* RxBlocking.framework */,
+				CF8E18151EB9C55900B2FC9E /* RxCocoa.framework */,
+				CF8E18161EB9C55900B2FC9E /* RxSwift.framework */,
+				CF8E18171EB9C55900B2FC9E /* RxTest.framework */,
 			);
 			name = "Third Party Libraries";
 			sourceTree = "<group>";
