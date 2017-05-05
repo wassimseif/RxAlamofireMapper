@@ -1,4 +1,4 @@
-//
+ //
 //  RxAlamofireMapper.swift
 //  RxAlamofireMapper
 //
@@ -21,7 +21,7 @@ public enum ObjectMapError: Error{
 
 extension DataRequest{
     
-    func processMap<N>(mapObject:@escaping (AnyObject)->N?) -> Observable<N>{
+    public func processMap<N>(mapObject:@escaping (AnyObject)->N?) -> Observable<N>{
         
         return Observable.create{ (observer) -> Disposable in
             self.responseJSON(completionHandler: { (response : DataResponse<Any>) in
@@ -43,14 +43,14 @@ extension DataRequest{
         }
     }
     
-    func rx_responseArray<T:Mappable>(type:T.Type) -> Observable<T>{
+    public func rx_responseArray<T:Mappable>(type:T.Type) -> Observable<[T]>{
         return self.processMap(mapObject: { (json) in
-            Mapper<T>().map(JSON: json as! JSON)
+            Mapper<T>().mapArray(JSONArray: json as! [JSON])
             
         })
     }
     
-    func rx_responseObject<T:Mappable>(type:T.Type) -> Observable<T>{
+    public func rx_responseObject<T:Mappable>(type:T.Type) -> Observable<T>{
         return self.processMap(mapObject: { (json) in
             Mapper<T>().map(JSON: json as! [String : Any] )
             
