@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A9481FC61FECF3722E67197C516149599294392C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A9481FC61FECF3722E67197C516149599294392C" : 9223372036854775807,
+    "7070CB37869A83BE1D332C7EE7D9D5A6A7F80E76" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7DD13CDF-8BAC-475C-B3BE-EC645150FEE4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A9481FC61FECF3722E67197C516149599294392C" : "RxAlamofireMapper\/",
+    "7070CB37869A83BE1D332C7EE7D9D5A6A7F80E76" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RxAlamofireMapper",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RxAlamofireMapper.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wassimseif\/Tech-Stack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7070CB37869A83BE1D332C7EE7D9D5A6A7F80E76"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wassimseif\/RxAlamofireMapper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A9481FC61FECF3722E67197C516149599294392C"
+    }
+  ]
+}

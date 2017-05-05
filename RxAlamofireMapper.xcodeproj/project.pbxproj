@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF4C0DCB1EBC5BAD00B3FA22 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4C0DC61EBB6A0200B3FA22 /* XCTest.framework */; };
 		CF8E18181EB9C55900B2FC9E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E18121EB9C55900B2FC9E /* Alamofire.framework */; };
 		CF8E18191EB9C55900B2FC9E /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E18131EB9C55900B2FC9E /* ObjectMapper.framework */; };
-		CF8E181A1EB9C55900B2FC9E /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E18141EB9C55900B2FC9E /* RxBlocking.framework */; };
 		CF8E181B1EB9C55900B2FC9E /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E18151EB9C55900B2FC9E /* RxCocoa.framework */; };
 		CF8E181C1EB9C55900B2FC9E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E18161EB9C55900B2FC9E /* RxSwift.framework */; };
-		CF8E181D1EB9C55900B2FC9E /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E18171EB9C55900B2FC9E /* RxTest.framework */; };
 		CFE0918A1EB3723A00E9FDAD /* RxAlamofireMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE091801EB3723A00E9FDAD /* RxAlamofireMapper.framework */; };
 		CFE0918F1EB3723A00E9FDAD /* RxAlamofireMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE0918E1EB3723A00E9FDAD /* RxAlamofireMapperTests.swift */; };
 		CFE091911EB3723A00E9FDAD /* RxAlamofireMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE091831EB3723A00E9FDAD /* RxAlamofireMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF4C0DC61EBB6A0200B3FA22 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CF8E18121EB9C55900B2FC9E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		CF8E18131EB9C55900B2FC9E /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = SOURCE_ROOT; };
 		CF8E18141EB9C55900B2FC9E /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = SOURCE_ROOT; };
@@ -50,12 +50,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4C0DCB1EBC5BAD00B3FA22 /* XCTest.framework in Frameworks */,
 				CF8E181C1EB9C55900B2FC9E /* RxSwift.framework in Frameworks */,
 				CF8E181B1EB9C55900B2FC9E /* RxCocoa.framework in Frameworks */,
-				CF8E181D1EB9C55900B2FC9E /* RxTest.framework in Frameworks */,
 				CF8E18191EB9C55900B2FC9E /* ObjectMapper.framework in Frameworks */,
 				CF8E18181EB9C55900B2FC9E /* Alamofire.framework in Frameworks */,
-				CF8E181A1EB9C55900B2FC9E /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF4C0DC51EBB6A0200B3FA22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF4C0DC61EBB6A0200B3FA22 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF8E17E61EB9BF6700B2FC9E /* Third Party Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +96,7 @@
 				CFE091821EB3723A00E9FDAD /* RxAlamofireMapper */,
 				CFE0918D1EB3723A00E9FDAD /* RxAlamofireMapperTests */,
 				CFE091811EB3723A00E9FDAD /* Products */,
+				CF4C0DC51EBB6A0200B3FA22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -370,10 +378,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				INFOPLIST_FILE = RxAlamofireMapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks /Applications/Xcode.app/Contents/Developer/Library/Frameworks/";
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wassimseifeddine.RxAlamofireMapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -396,10 +409,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				INFOPLIST_FILE = RxAlamofireMapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks /Applications/Xcode.app/Contents/Developer/Library/Frameworks/";
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wassimseifeddine.RxAlamofireMapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
